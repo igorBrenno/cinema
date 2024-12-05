@@ -10,7 +10,11 @@ const MoviesComponent = () => {
         e.preventDefault();
 
         const searchTerm = e.target.value;
-        setSearchItem(e.target[0].valueS
+        setSearchItem(e.target[0].value)
+    }
+    
+    const fetchMovies = async () => {
+        try {
             const respostaMovie = await api.get('/movie/top_rated', {
                 params: {
                     page: 1,
