@@ -1,0 +1,14 @@
+Bom, comecei criando um formulario, onde tem dois input um do tipo text e outro do tipo submit.
+
+Neste formulario tem um função onSubmit que chama a função handleInputChange, que é passado o objeto do input.
+
+Nesta função basicamente ela abre o objeto e seleciona o valor que está no input.
+
+E ao final dela ela passa o valor para o setSearchItem que foi setado com o useState
+
+Dai eu fiz uma função assincrona chamada search.
+
+Onde a mesma usa a api para pegar os filmes de acordo com oque foi dito no input.
+
+Já no useEffect para mostrar na tela eu fiz um if, que compara de o searchItem existe ou não,
+no caso de foi pesquisado algo ou não, se foi ele chama a função search() se não ela chama a fetchMovies()
